@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 
 const URL = "https://estornospp.up.railway.app/api/whatsapp/webhook/";
 
-cron.schedule("30 12 * * *", async () => {
+cron.schedule("*/2 * * * *", async () => {
   console.log("⏰ Executando alerta de estornos...");
   try {
     const res = await fetch(URL, { method: "POST" });
