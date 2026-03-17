@@ -5,7 +5,7 @@ const URL = "https://estornospp.up.railway.app/api/whatsapp/webhook/";
 
 // cron.schedule("30 12 * * *", async () => { // Executa todo dia às 12:30
 // cron.schedule("*/2 * * * *", async () => { // Executa a cada 2 minutos
-cron.schedule("*/2 * * * *", async () => { // Executa a cada 2 minutos
+cron.schedule("0 10 * * *", async () => { // Executa todo dia às 10:00
 
   console.log("⏰ Executando alerta de estornos...");
   try {
